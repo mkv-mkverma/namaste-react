@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 01 Inception</title>
+  </head>
+  <body>
+    <!-- Using HTML  -->
+    <!-- <div><h1>Hello World! using HTML</h1></div> -->
+
+    <!-- Using JS to manipulate DOM -->
+    <!-- <div id="root"></div> -->
+
+    <!-- <script>
+      const root = document.getElementById("root");
+      const heading = document.createElement("h1");
+      heading.innerHTML = "Hello World! using JS";
+      root.appendChild(heading);
+    </script> -->
+
+    <!-- Using React -->
+    <div id="root"></div>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      const heading1 = React.createElement(
+        "h1",
+        { id: "title", className: "heading" },
+        "Hello World! using React"
+      );
+      const heading2 = React.createElement("h2", {}, "My first assignment");
+      const container = React.createElement("div", {}, [heading1, heading2]);
+      root.render(container);
+    </script>
+  </body>
+</html>
