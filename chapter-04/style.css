@@ -1,0 +1,47 @@
+.text-white {
+  color: white;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.bg-primary {
+  background-color: aquamarine;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.card {
+  border: 1px solid black;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.resturantList {
+  display: flex;
+  flex-wrap: wrap;
+}
